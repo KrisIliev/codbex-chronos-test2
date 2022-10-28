@@ -38,3 +38,4 @@ jobs:
           docker build . -t ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos-keycloack:latest
           docker push ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos-keycloack:latest
           cd ../../
+          
