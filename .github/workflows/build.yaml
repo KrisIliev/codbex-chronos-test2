@@ -28,7 +28,7 @@ jobs:
         run: docker rmi -f $(docker images -aq)
 
       - name: Docker Login
-        run: docker login ${{DOCKER_REGISTRY}} -u ${{secrets.DOCKER_USERNAME}} -p $${{secrets.DOCKER_PASSWORD}}
+        run: docker login ${{secrets.DOCKER_REGISTRY}} -u ${{secrets.DOCKER_USERNAME}} -p $${{secrets.DOCKER_PASSWORD}}
       - name: Docker Image
         run: |
           cd releng/chronos-platform
