@@ -32,13 +32,13 @@ jobs:
       - name: Docker Image
         run: |
           cd releng/chronos-platform
-          docker build . -t ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos:latest
-          docker push ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos:latest
+          docker build . -t ${{secrets.DOCKER_REGISTRY}}/KrisIliev/codbex-chronos-test:latest
+          docker push ${{secrets.DOCKER_REGISTRY}}/KrisIliev/codbex-chronos-test:latest
           cd ../../
-      - name: Docker Image - Keycloack
-        run: |
-          cd releng/chronos-platform-keycloack
-          docker build . -t ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos-keycloack:latest
-          docker push ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos-keycloack:latest
-          cd ../../
+    #  - name: Docker Image - Keycloack
+        #run: |
+          #cd releng/chronos-platform-keycloack
+          #docker build . -t ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos-keycloack:latest
+          #docker push ${{secrets.DOCKER_REGISTRY}}/codbex/codbex-chronos-keycloack:latest
+          #cd ../../
           
