@@ -2,7 +2,7 @@
 
 Timesheets Management Application
 
-## Model
+## Model 
 
 ![model](images/chronos-model.png)
 
